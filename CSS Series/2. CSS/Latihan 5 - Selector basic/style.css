@@ -1,0 +1,37 @@
+/* mengubah element semua tag yang ada didalam body */
+body {
+	font-family: arial;
+}
+
+/* jika elementnya sama bisa digabung */
+h1, h2 {
+	color: green;
+}
+
+/* mengubah element tag <a> yg ada didalam <li> yg ada didalam <ul> */
+ul li a {
+	color: indianred;
+}
+
+/* mengubah element tag <a> yg ada didalam <li> yg ada didalam <ol> */
+ol li a {
+	color: blueviolet;
+}
+
+/* mengubah element tag menggunakan id */
+#p1 {
+	color: orange;
+}
+
+/* mengubah element tag menggunakan class */
+.teks {
+	color: lightgreen;
+}
+.cetak-tebal {
+	font-weight: bold;
+}
+
+/* mengubah element tag menggunakan class yg ada pada suatu tag */
+p.cetak-tebal {
+	font-size: 30px;
+}

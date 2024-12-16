@@ -1,0 +1,10 @@
+/* satuan dari value ada beberapa:
+- px : pixel (nilai pasti)
+- % : nilai relatif dari parentnya
+- in, cm, mm, pt, pc : ukuran dalam dunia nyata (inchi, centi, mili, point, pica)
+ */
+div {
+	width: 500px;
+	height: 350px;
+	background-color: green;
+}

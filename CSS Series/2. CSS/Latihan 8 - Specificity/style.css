@@ -1,0 +1,32 @@
+/* jika (misal) <p> diberi element yg sama 2x dengan nilai yg berbeda */
+/* maka hasilnya adalah nilai dari element yg terakhir yg dipakai */
+/* karena bobot/nilai dari selector yg digunakan sama besar */
+/* cara menghitungnya adalah sebagai berikut */
+/* inline  id  class  html */
+/*    0     0    0     0   */
+/* ----------------------- */
+p { color: darkred; } /* 0 0 0 1 */
+
+p { color: green; } /* 0 0 0 1 */
+
+/*karena nilainya sama-sama 1 maka yg dipakai adalah urutan deklarasi terakhir*/
+
+/* maka harus diberikan spesifikasi yg berbeda, misalkan diberi id */
+#p1 { color: darkred; } /* 0 1 0 0 */
+/* karena nilainya 100 maka element yg memiliki id "p1" baru akan berubah tidak mengikuti selector "p" */
+
+/* contoh lain */
+ul#makanan li { color: green; } /* 0 1 0 2 */
+
+ul#makanan li.favorit { color: orange; } /* 0 1 1 2 */
+/* karena 112 lebih besar dari 102 maka element <li> dengan class "favorit" */
+/* yg berada didalam <ul> dengan id "makanan" akan berubah warna menjadi "orange" */
+/* namun jika hanya ditulis seperti berikut: */
+
+/* .favorit { color: orange } 0 0 1 0 */
+
+/* maka element <li> dengan class "favorit" yg berada didalam <ul> dengan id "makanan" */
+/* tetap akan mengikuti element dari selector dengan nilai 102 */
+/* meskipun memiliki hubungan parent dan child */
+
+/* untuk lebih jelasnya bisa dilihat pada http://specificity.keegan.st */

@@ -1,0 +1,36 @@
+/* menggunakan font-family, dimana developer harus menggunakan font dimana
+user juga memiliki font tersebut pada perangkat mereka.
+
+body {
+	font-family:  "arial narrow", arial, sans-serif;
+}
+
+dengan syntax seeperti diatas maka font yg akan digunakan adalah "arial narrow"
+dan jika user tidak memiliki font tersebut di perangkat mereka atau developer
+salah menuliskan nama font maka akan diganti dengan "arial" dan jika masih tidak
+ada maka akan diganti dengan font lain dengan type "sans-serif" */
+
+/* jika ingin menggunakan font unik tanpa harus memikirkan apakah user memiliki
+font tersebut pada perangkat mereka maka dapat menggunakan google font yang dapat
+diambil dari https://fonts.google.com.
+*/
+
+h1 {
+	font-size: 100px;
+	font-family: 'Futura', arial;
+}
+
+/* untuk menggunakan syntax diatas maka pada bagian <head> di HTML harus diberi
+link untuk mengakses font tersebut dan harus menggunakan koneksi internet. */
+
+/* menggunakan font-face */
+
+@font-face {
+	font-family: "Futura";
+	src: url('Futura Md BT Medium.ttf') format('truetype');
+}
+
+/* font-face digunakan untuk membuat font-family baru dimana font ini terletak
+pada file yg sama dengan file website dan akan diupload bersama website tersebut.
+Maka jika user tidak memiliki font ini tidak akan masalah karena font sudah ada
+di website. */

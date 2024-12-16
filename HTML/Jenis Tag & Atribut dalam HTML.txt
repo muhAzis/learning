@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>   = judul pada "tab browser"
+  <style></style>   = CSS
+  <script></script> = javascript
+  <meta></meta>     = metadata
+</head>
+
+<body>
+  //teks
+  <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <p> = headings h1-h6 (besar-kecil) & paragraf
+
+  //pendukung teks
+  <br>     = new line
+  <hr> 	   = garis horizontal
+  <em>     =
+  <strong> = 
+
+  //gambar
+  <img>    = menyimpan gambar
+
+  //hyperlink
+  <a>	   = hyperlink
+
+  //bullets&numbering
+  <ul> = unordered list
+  <ol> = ordered list
+  <li> = list item (didalam <ul> dan <ol>)
+  <dl> = definising list
+  <dt> =
+  <dd> =
+
+  //tabel
+  <table> = membuat tabel
+    <thead> = judul tabel
+    <tbody> = isi tabel
+  </table>
+
+  //form
+  <form>   = membuat form
+    <input>  =
+    <select> =
+    <button> =
+  </form>
+
+  //script
+  <script> = javascript
+
+  //object
+  <object> = menyimpan objek multimedia
+
+  //grouping
+  <div>  =
+  <span> =
+
+  //komentar
+  <!-- ini komentar -->
+</body>
+
+//Struktur Tag
+<nama_tag atribut_tag="nilai_atribut_tag">
+contoh : <head bgcolor="lightblue">
+--- head        = tag
+--- bgcolor     = warna background
+--- "lightblue" = warna
+
+boleh lebih dari 1 atribut, misal:
+<head bgcolor="lighblue" id="myid" class="myclass">
+
+//atribut global
+- accesskey = menentukan shortcut keyboard
+- class = menentukan class dari sebuah element
+- id = menentukan id dari sebuah element
+- dir = menentukan arah tulisan (direction)
+- lang = menentukan bahasa (language)
+- style = menyisipkan in-line CSS
+- tabindex = menentukan urutan fokus cursor saat menekan "tab"
+- title = memberi judul sebuah element
+(atribut lebih lengkap = www.w3school.com/Tags)

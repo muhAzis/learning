@@ -1,0 +1,15 @@
+h1 {
+	font-style: italic;
+	font-variant: small-caps;
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 20px;
+	font-family: futura md bt, arial, sans-serif;
+	/*atau bisa ditulis seperti dibawah ini*/
+	/*font: italic small-caps normal 100px/20px futura md bt, arial, sans-serif;*/
+	/*font: font-style font-variant font-weight font-size/line-height font-family*/
+}
+p {
+	font-family: corbel, sans-serif;
+	line-height: 20px;
+}

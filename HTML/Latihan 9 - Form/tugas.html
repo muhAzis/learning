@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Form Tugas</title>
+</head>
+<body>
+<form>
+	<table border="0" cellspacing="0" cellpadding="5">
+		<tr>
+			<td align="right"><label for="username">Usename : </label></td>
+			<td><input type="text" id="username"></td>
+		</tr>
+		<tr>
+			<td align="right"><label for="password">Password : </label></td>
+			<td><input type="password" id="password"></td>
+		</tr>
+		<tr>
+			<td align="right"><p>Jenis Kelamin : </p></td>
+			<td>
+				<input type="radio" id="pria" name="kelamin">
+				<label for="pria">Laki-laki</label>
+				<br>
+				<input type="radio" id="wanita" name="kelamin">
+				<label for="wanita">Perempuan</label>
+			</td>
+		</tr>
+		<tr>
+			<td align="right"><p>Hobi : </p></td>
+			<td>
+				<input type="checkbox" id="menyanyi" name="hobi"><label for="menyanyi">Menyanyi</label><br>
+				<input type="checkbox" id="olahraga" name="hobi"><label for="olahraga">Olahraga</label><br>
+				<input type="checkbox" id="menari" name="hobi"><label for="menari">Menari</label>
+			</td>
+		</tr>
+		<tr>
+			<td align="right"><label for="catatan">Catatan : </label></td>
+			<td><textarea id="catatan"></textarea></td>
+		</tr>
+		<tr>
+			<td align="right"><label for="kota">Kota Kelahiran : </label></td>
+			<td>
+				<select id="kota">
+					<option>Pilih...</option>
+					<option>Bandung</option>
+					<option>Yogyakarta</option>
+					<option>Jakarta</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><button type="submit">KIRIM</button></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

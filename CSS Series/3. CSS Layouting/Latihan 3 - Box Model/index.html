@@ -1,0 +1,31 @@
+<!-- Setiap element di halaman berada di dalam sebuah box (kotak)
+kita bisa mengatur ukuran dan posisi kotak tersebut
+kita bisa memberi warna/gambar sebagai background kotak tersebut -->
+<!-- CSS box model mendefinisikan kotak yan dihasilkan oleh sebuah element, lalu menampilkannya sesuai dengan format visualnya. -->
+<!-- CSS box model terdiri dari margin, border, padding dan content.
+- margin : area transparan disekitar kotak (diluar border)
+- padding : area transparan didalam kotak (antara content dan border)
+- border : batas disekeliling content dan padding
+content : konten sebenarnya didalam box, bisa berupa teks atau gambar -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Box Model - Margin</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="satu">1</div><div class="dua">2</div><div class="tiga">3</div>
+<!-- ketiga div disambung deklarasinya karena saat diubah displaynya menjadi
+inline-block terdapat jarak kecil antar div walaupun tidak diberi margin atau
+margin diberi nilai 0px -->
+<div class="dua2">2</div>
+
+<div class="empat">4</div>
+<div class="lima">5</div>
+<div class="enam">6</div>
+
+</body>
+</html>

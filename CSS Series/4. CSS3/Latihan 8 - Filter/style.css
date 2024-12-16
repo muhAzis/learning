@@ -1,0 +1,58 @@
+body {
+	text-align: center;
+}
+
+img {
+	width: 200px;
+	margin: 0 5px 5px 0;
+}
+
+/* untuk mengatur efek blur dari image */
+.satu {
+	filter: blur(5px);
+}
+
+/* untuk mengatur efek kecerahan dari image */
+.dua {
+	filter: brightness(0.5);
+}
+
+/* untuk mengatur efek kontras dari image */
+.tiga {
+	filter: contrast(50%);
+}
+
+/* untuk mengatur saturasi dari image */
+.empat {
+	filter: saturate(150%);
+}
+
+/* untuk mengatur efek hitam-putih dari image */
+.lima {
+	filter: grayscale(100%);
+}
+
+/* untuk mengatur efek sepia dari image */
+.enam {
+	filter: sepia(50%);
+}
+
+/* untuk mengatur efek rotasi hue dari image */
+.tujuh {
+	filter: hue-rotate(90deg);
+}
+
+/* untuk mengatur efek invert dari image */
+.delapan {
+	filter: invert(100%);
+}
+
+/* untuk mengatur efek transparansi dari image */
+.sembilan {
+	filter: opacity(50%);
+}
+
+/* untuk mengatur efek bayangan dari image */
+.sepuluh {
+	filter: drop-shadow(10px 10px);
+}

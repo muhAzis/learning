@@ -1,0 +1,101 @@
+p {
+	font-size: 20px;
+	text-align: center;
+}
+
+/* syntax untuk penulisan properti transform adalah sebagai berikut:
+   - scale(angka), scaelX(angka), scaleY(angka)
+   - rotate(deg), rotateX(deg), rotateY(deg)
+   - skew(deg), skewX(deg), skewY(deg)
+   - translate(px), translateX(px), translateY(px) */
+
+.scales {
+	margin: 50px auto 0;
+}
+.scales div {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: lightblue;
+	transition: 1s;
+}
+.scale:hover {
+	transform: scale(0.5);
+}
+.scaleX:hover {
+	transform: scaleX(0.5);
+}
+.scaleY:hover {
+	transform: scaleY(0.5);
+}
+.scalecombi:hover {
+	transform: scaleX(1.5) scaleY(0.5);
+}
+
+.rotates {
+	margin: 50px auto 0;
+}
+.rotates div {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: indianred;
+	transition: 1s;
+}
+.rotate:hover {
+	transform: rotate(45deg);
+}
+.rotateX:hover {
+	transform: rotateX(180deg);
+}
+.rotateY:hover {
+	transform: rotateY(180deg);
+}
+.rotatecombi:hover {
+	transform: rotate(45deg) rotateX(45deg) rotateY(45deg);
+}
+
+.skews {
+	margin: 50px auto 0;
+}
+.skews div {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: gold;
+	transition: 1s;
+}
+.skew:hover {
+	transform: skew(10deg);
+}
+.skewX:hover {
+	transform: skewX(10deg);
+}
+.skewY:hover {
+	transform: skewY(10deg);
+}.skewcombi:hover {
+	transform: skewX(10deg) skewY(10deg);
+}
+
+.translates {
+	margin: 50px auto 0;
+}
+.translates div {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: greenyellow;
+	transition: 1s;
+}
+.translate:hover {
+	transform: translate(10px);
+}
+.translateX:hover {
+	transform: translateX(10px);
+}
+.translateY:hover {
+	transform: translateY(10px);
+}
+.transcombi:hover {
+	transform: translateX(10px) translateY(10px);
+}

@@ -1,0 +1,30 @@
+/* contoh visible */
+.visible {
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+}
+
+/* contoh auto */
+.auto {
+	overflow: auto;
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+}
+
+/* contoh hidden */
+.hidden {
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+}
+
+/* contoh scroll */
+.scroll {
+	overflow: scroll;
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+}

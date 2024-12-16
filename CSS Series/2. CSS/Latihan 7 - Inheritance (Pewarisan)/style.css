@@ -1,0 +1,15 @@
+body {
+	font-family: arial;
+	color: darkgrey;
+}
+
+/* secara deafault <a> tidak akan mengikuti element pada parent */
+/* maka harus diberi element "inherit" supaya dapat mengikuti element pada parentnya */
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: indianred;
+	font-size: 20px;
+}

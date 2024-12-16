@@ -1,0 +1,56 @@
+<!-- CSS Position digunakan untuk mengubah posisi suatu element tanpa
+mempengaruhi posisi dari elemnt yg lain. -->
+<!-- Position memiliki beberapa properti, diantaranya:
+- static : posisi default dari sebuah element,
+           menggunakan position selain static akan membuat element mejadi seolah-olah berbeda dimensi dari element lainnya,
+           element yg diberi position selain static dapat menggunakan properti top, left, bottom dan right untuk mengatur posisinya.
+- relative : ketika kita menggerakkan element dengan posisi relative,  ruang yg ditempati oleh element tersebut masih ada,
+             ketika kita menggerakkan element dengan posisi relative element akan bergerak relatif terhadap posisi semulanya,
+             jika kita memberi properti top: 0; dan left: 0; maka element tidak berubah posisinya.
+- absolute : ketika kita menggerakkan element dengan posisi absolute ruang yg ditempati oleh element tersebut dianggap tidak ada,
+			 ketika kita menggerakkan element dengan posisi absolute element akan bergerak relatif terhadap posisi dari
+			 element parentnya selama parent juga memiliki posisi non-static,
+			 jika memberi properti top: 0; dan left: 0; maka element akan berada di ujung kiri atas dari element parentnya.
+- fixed : saat menggerakkan element dengan posisi fixed element ini tidak akan memperdulikan parentnya meskipun dengan posisi non-static,
+		  saat window di scroll maka element dengan posisi fixed akan ikut terbawa dengan posisi yg sama relatif dengan windo utama -->
+<!-- z-index digunakan untuk menentukan posisi z (3D) dari sebuah element.
+secara default pada HTML posisi z dari sebuah element ditentukan dari urutan penulisan syntax,
+urutan penulisan element terakhir adalah yg paling atas. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Position</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<!-- contoh position relative -->
+	<div class="relative">
+		<div class="satu"></div>
+		<div class="dua"></div>
+		<div class="tiga"></div>
+	</div>
+	<br><br><br>
+
+	<!-- contoh position absolute -->
+	<div class="absolute">
+		<div class="satu2"></div>
+		<div class="dua2"></div>
+		<div class="tiga2"></div>
+	</div>
+	<br><br><br>
+
+	<!-- contoh position fixed -->
+	<div class="fixed"></div>
+
+	<!-- contoh penggunaan z-index -->
+	<div class="z">
+		<div class="satu3"></div>
+		<div class="dua3"></div>
+		<div class="tiga3"></div>
+	</div>
+
+</body>
+</html>

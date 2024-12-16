@@ -1,0 +1,15 @@
+h1 {
+   color : skyblue;
+/* color : #50145a; */
+/* color : rgb(25,40,87); */
+  font-size : 100px;
+  text-decoration : underline;
+  text-transform : uppercase;
+}
+
+p {
+  text-align : left;
+  text-indent : 100px;
+  letter-spacing : 2px;
+  word-spacing : 5px;
+}

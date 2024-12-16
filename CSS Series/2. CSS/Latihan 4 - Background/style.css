@@ -1,0 +1,10 @@
+body {
+	background-color: lightseagreen;
+	background-image: url(concrete_wall.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+
+	/*atau bisa ditulis seperti dibawah ini*/
+	/*background: lightseagreen url(concrete_wall.png) no-repeat bottom center*/
+	/*background: bg-color url() bg-repeat bg-position*/
+}

@@ -1,0 +1,5 @@
+- border = memberikan border pada tabel
+- cellspacing = memberikan space antar cell 1 dengan yg lain
+- cellpadding = memberikan space didalam cell
+- colspan = menggabungkan 2 atau lebih cell kolom menjadi satu
+- rowspan = menggabungkan 2 atau lebih cell baris menjadi satu

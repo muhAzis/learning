@@ -1,0 +1,41 @@
+.default {
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	margin: 50px auto;
+	box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* contoh penggunaan <spread> */
+.spread {
+	width: 300px;
+	height: 300px;
+	background-color: salmon;
+	margin: 50px auto;
+	box-shadow: 20px 20px 5px 10px rgba(0, 0, 0, 0.75);
+}
+/* efek yg diberikan oleh <spread> yaitu memperbesar area bayangan lebih besar dari
+objek asli jika diberi nilai positif, dan lebih kecil dari objek asli jika diberi
+nilai negatif. */
+
+/* contoh penggunaan <inset> */
+.inset {
+	width: 300px;
+	height: 300px;
+	background-color: skyblue;
+	margin: 50px auto;
+	box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.75);
+}
+/* efek yg diberikan oleh <inset> yaitu mengubah bayangan menjadi berada didalam objek
+bukan diluar objek. */
+
+/* contoh penggunaan multiple-shadow */
+.multiple {
+	width: 300px;
+	height: 300px;
+	background-color: yellowgreen;
+	margin: 50px auto;
+	box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.75),
+				-10px -10px 5px rgba(80, 100, 255, 0.75),
+				0px 150px 5px -30px rgba(0, 0, 0, 0.25);
+}

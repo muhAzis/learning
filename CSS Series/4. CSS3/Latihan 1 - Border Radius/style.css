@@ -1,0 +1,53 @@
+.norm {
+	width: 300px;
+	height: 300px;
+	background-color: salmon;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 300px;
+	/* untuk pemberian nilai pada border-radius semakin besar nilainya
+	akan semakin tumpul sudutnya hingga dapat membentuk sebuah lingkaran.
+	Dan jika nilai yg diberikan sudah diatas dari nilai dimana element sudah
+	membentuk lingkaran maka tidak akan terjadi apa-apa lagi. */
+	/* bisa juga ditulis untuk masing-masing sudut dengan cara:
+	border-top-left-radius: 0; untuk kiri atas
+	border-top-right-radius: 0; untuk kanan atas
+	border-bottom-right-radius: 0; untuk kanan bawah
+	border-bottom-left-radius: 0; untuk kiri bawah */
+	/* atau bisa juga menggunakan shorthand seperti halnya margin dll, dengan cara:
+	border-radius: 10px 20px 30px 40px; kiri-atas kanan-atas kanan-bawah kiri-bawah */
+}
+
+/* Pada element yg diberi properti border-radius jika diberi background image maka
+element tersebut akan otomati bersifat seperti frame, maka gambar yg menjadi background
+dari element ini tidak keluar dari frame melainkan terpotong oleh frame. */
+/* Kecuali image yg ditambahkan ini bukanlah properti background image dari element yg diberi
+properti border-radius melainkan sebuah element image yg berada didalam element yg menggunakan
+properti border-radius. Maka pada element yg menggunakan border-radius harus ditambahkan properti
+overflow: hidden; supaya apapun element yg berada pada element ini jika melebihi batas dari ukuran
+element ini akan dipotong. */
+
+/* contoh menggunakan background */
+.bg {
+	width: 300px;
+	height: 300px;
+	background-color: salmon;
+	background-image: url(profil.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 300px;
+}
+
+/* contoh menggunakan image terpisah */
+.over {
+	width: 300px;
+	height: 300px;
+	background-color: salmon;
+	border-radius: 50%;
+	overflow: hidden;
+}
+img {
+	width: 200px;
+}

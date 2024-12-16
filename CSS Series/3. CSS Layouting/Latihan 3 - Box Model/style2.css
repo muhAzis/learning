@@ -1,0 +1,47 @@
+.def {
+	width: 300px;
+	height: 300px;
+	background-color: lightgreen;
+	margin: 50px auto;
+	padding: 10px 20px 30px 40px;
+	/* format penulisannya sama dengan margin, bedanya padding tidak bisa diberi nilai negatif dan auto.
+	bisa juga ditulis masing-masing sisi, padding-top, right, left, atau right. */
+	/* menggunakan padding akan menambah ukuran element, misal sudah menggunakan widht dan height 50px
+	kemudian menggunakan padding 50px maka ukuran elementnya menjadi 100px bukan 50px lagi */
+
+	border: 5px solid red;
+	/* penulisan border adalah seperti diatas, nilai pertama adalah tebal border, nilai kedua style border,
+	dan nilai ketiga adalah warna border */
+	/* style border yg bisa digunakan ada solid, dotted, dashed dan double */
+	/* dan untuk mesing-masing nilainya bisa ditulis secara individual, misal
+	border-width: 5px;
+	border-style: solid;
+	border-color: red; */
+	/* dan jika ingin menggunakan border hanya pada salah satu atau dua sisinya maka dapat ditulis secara
+	indivual juga, misal:
+	border-left: 5px solid red;
+	border-right: 5px dotted red; */
+	/* border juga menambah dimensi dari element, jadi total dimensi dari sebuah element adalah:
+	total dimensi = width/height + padding + border */
+}
+
+/* untuk mengatasi masalah dimensi ini ada element bernama box-sizing */
+div.size div {
+	width: 600px;
+	margin: 20px auto;
+	box-sizing: border-box;
+	/* dengan menggunakan box-sizing maka berapapun padding dan border yg digunakan selama
+	width/height dari parent sudah ditentukan maka tidak akan mengubah dimensi tersebut */
+}
+
+.satu {
+	background-color: lightblue;
+	padding: 10px;
+	border: 15px solid red;
+}
+
+.dua {
+	background-color: orange;
+	padding: 30px;
+	border: 10px dashed red;
+}

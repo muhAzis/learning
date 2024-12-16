@@ -1,0 +1,78 @@
+div.satu, .dua, .tiga {
+	display: inline-block;
+}
+
+.satu {
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	margin-left: 100px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+}
+
+/* div class 2 mendatar */
+.dua {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin-top: 30px;
+	margin-left: 50px; /* margin ini akan bertambahan dengan margin-right dari element
+	yg posisinya ada disebelah kiri dari element ini */
+	margin-right: 30px;
+}
+
+/* negative margin */
+.tiga {
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+	margin-left: -50px; /* nilai negatif akan mengurangi nilai positif dari margin sehingga
+	jumlah total nilai margin menjadi lebih kecil bahkan negatif (saling bertumpukan)
+	ini berlaku untuk horizontal maupun vertikal */
+}
+
+/* div 2 menurun (overlapping margin) */
+.dua2 {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin-left: 100px;
+	margin-top: 30px; /* margin ini tidak mengubah jarak keatas karena sudah ada margin-bottom
+	dari element yg posisinya diatas element ini yg lebih besar nilainya */
+}
+
+/* margin auto */
+.empat {
+	width: 100px;
+	height: 100px;
+	background-color: darkred;
+	margin-left: auto;
+	margin-right: auto;
+	/* harus dan khusus menggunakan margin-left dan margin-right, tidak boleh salah satu saja
+	maka posisi element akan berada pada tengah-tengah parentnya */
+}
+
+/* shorthand */
+.lima {
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	margin: 50px;
+	/* margin di ke-4 sisi dari element ini akan berubah menjadi 50px */
+}
+
+/* contoh lain shorthand */
+.enam {
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	margin: 50px auto;
+	/* nilai pertama adalah untuk margin atas dan bawah, sedangkan nilai kedua (auto)
+	untuk margin kanan dan kiri. */
+	/* jika menggunakan 3 nilai maka nilai pertama adalah margin atas, nilai kedua margin kanan dan kiri,
+	nilai ketiga adalah margin bawah. */
+	/* dan jika menggunakan 4 nilai maka nilai pertama adalah margin atas, nilai kedua margin kanan,
+	nilai ketiga margin bawah, dan nilai keempat adalah margin kiri */
+}

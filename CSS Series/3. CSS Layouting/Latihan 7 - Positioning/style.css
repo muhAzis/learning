@@ -1,0 +1,90 @@
+body {
+	height: 2000px;
+}
+
+/* contoh position relative */
+.relative .satu, .dua, .tiga {
+	width: 100px;
+	height: 100px;
+}
+.satu {
+	background-color: lightgreen;
+}
+.dua {
+	background-color: violet;
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+.tiga {
+	background-color: gold;
+}
+
+/* contoh position absolute */
+.absolute {
+	width: 400px;
+	height: 400px;
+	border: 10px solid black;
+	margin: auto;
+	position: relative;
+}
+.satu2, .dua2, .tiga2 {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+.satu2 {
+	background-color: lightgreen;
+}
+.dua2 {
+	background-color: violet;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.tiga2 {
+	background-color: gold;
+}
+
+/* contoh position fixed */
+.fixed {
+	width: 100px;
+	height: 100px;
+	margin: auto; /* tidak berpengaruh */
+	background-color: violet;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+/* contoh penggunaan z-index */
+.z {
+	width: 400px;
+	height: 400px;
+	border: 10px solid black;
+	margin: auto;
+	position: relative;
+}
+.satu3, .dua3, .tiga3 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+.satu3 {
+	background-color: green;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.dua3 {
+	background-color: purple;
+	top: 50px;
+	left: 50px;
+	z-index: 3;
+}
+.tiga3 {
+	background-color: palevioletred;
+	top: 20px;
+	left: 80px;
+	z-index: 1;
+}

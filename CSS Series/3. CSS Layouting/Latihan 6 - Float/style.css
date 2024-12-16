@@ -1,0 +1,128 @@
+/* dasar float dan contoh penggunaan untuk text wrapping */
+.container {
+	width: 600px;
+	margin: auto;
+	padding: 5px;
+	border: 1px solid black;
+}
+.satu, .dua, .tiga {
+	width: 100px;
+	height: 100px;
+}
+.satu {
+	background-color: salmon;
+	float: left;
+	/* kotak merah berada diatas kotak hijau (sesuai urutan penulisan HTML, 
+	yg ditulis pertama adalah yg posisinya paling atas) */
+}
+.dua {
+	background-color: limegreen;
+	margin-left: 50px;
+}
+.tiga {
+	background-color: lightskyblue;
+	float: right;
+	margin-left: 5px;
+	/* kotak biru menjadi berada di sisi kanan dari parent, dan teks tidak menimpa element ini
+	melainkan mengisi ruangan kosong disekitarnya */
+}
+p {
+	text-align: justify;
+}
+
+/* contoh penggunaan float untuk image gallery */
+.container2 {
+	width: 600px;
+	margin: auto;
+	padding: 5px;
+	border: 1px solid black;
+}
+.kotak {
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+	background-color: salmon;
+	color: white;
+	text-align: center;
+	line-height: 80px;
+	font-size: 30px;
+	float: right; /* jika diberi value "left" maka kebalikannya */
+	/* container2 tidak akan menyelubungi kotak didalamnya karena sudah menjadi
+	float semua, menjadi float artinya "out-of flow"
+	namun ke-10 kotak tersebut tetap menjadi child dari container2 */
+}
+
+/* contoh penggunaan float untuk multi-coloumn layout */
+.container3 {
+	width: 800px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5px;
+}
+.kiri, .tengah, .kanan {
+	float: left;
+}
+.kiri {
+	width: 150px;
+	height: 500px;
+	background-color: salmon;
+}
+.tengah {
+	width: 500px;
+	height: 500px;
+	background-color: lightskyblue;
+}
+.kanan {
+	width: 150px;
+	height: 500px;
+	background-color: limegreen;
+}
+/* pada contoh ketiga ini juga terjadi hal yg sama dengan contoh kedua
+yaitu container atau parent tidak menyelubungi childnya karena child sudah diberi element float. */
+/* maka untuk mengatasinya ada beberapa cara, yaitu:
+- overflow : mengganggap element float kembali ada (tidak disarankan)
+- <div> kosong & clear : menambah div kosong yg hanya berisi element clear di akhir konten (beberapa tidak menyarankan)
+- micro clearfix : menggunakan pseudo-element dan clear (disarankan) */
+
+/* contoh overflow
+.kanan {
+	overflow: auto;
+} */
+
+/* contoh div kosong & clear
+."nama div" {
+	clear: left; "untuk float left"
+	clear: right; "untuk float right"
+	clear: both; "untuk float kanan + kiri"
+}
+untuk metode ini div diletakkan setelah element HTML yg diinginkan*/
+
+/* contoh micro clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/* cara menggunakannya adalah dengan menambahkan nama class cf disetiap element yg
+menggunakan float */

@@ -1,0 +1,14 @@
+- input    = membuat wadah untuk user memasukkan sebuah data
+- textarea = wadah untuk mengisi komentar panjang
+- select   = untuk membuat dropdown atau combobox
+- button   = membuat tombol
+- label    = menandai sebuah element input
+
+//element INPUT//
+- text
+- password
+- radio
+- checkbox
+- submit (tidak disarankan)
+- reset (tidak disarankan)
+- button (tidak disarankan)

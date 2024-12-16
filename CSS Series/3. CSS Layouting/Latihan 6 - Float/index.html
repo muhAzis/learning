@@ -1,0 +1,60 @@
+<!-- Float merupakan properti pada CSS untuk mengatur posisi sebuah element.
+Sebuah element dapat dipaksa untuk berada di sebelah kiri atau kanan dari parent/pembungkusnya dengan menggunakan properti ini. -->
+<!-- Value yg terdapat pada float yaitu none (default), left dan right.
+- none : tidak menggunakan float
+- left : element dipaksa berada di kiri
+- right : element dipaksa berada di kanan -->
+
+<!-- Perilaku dari element-element HTML ketika diberi CSS ada 2, yaitu normal flow dan out-of flow.
+- normal flow : element yg menggunakan display: block akan berada dibawah sedangkan yg menggunakan display: inline akan berada disebelah kanan.
+- out-of flow : element normal flow akan menganggap element out-of flow tidak ada dan akan mengisi ruang dari element out-of flow tersebut (bertumpuk) -->
+
+<!-- Kapan properti float digunakan?
+- text wrapping : membuat teks mengelilingi gambar/element lain
+- image gallery : membuat serangkaian gambar menjadi galeri
+- multi-column layout : membuat halaman memiliki beberapa kolom
+- dll -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Float</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- dasar float dan contoh penggunaan untuk text wrapping -->
+<div class="container">
+	<div class="satu"></div>
+	<div class="dua"></div>
+	<div class="tiga"></div>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non, iusto aliquid hic vero qui aspernatur, fugiat, unde, iure aliquam soluta impedit accusamus ex fugit saepe suscipit adipisci ipsam magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nihil a accusantium vero magni nobis libero omnis eaque, tempora dicta est laboriosam deserunt cum. A deleniti, animi. Ducimus praesentium, voluptatem.</p>									
+</div>
+<br><br>
+
+<!-- contoh penggunaan float untuk image gallery -->
+<div class="container2 cf">
+	<div class="kotak">1</div>
+	<div class="kotak">2</div>
+	<div class="kotak">3</div>
+	<div class="kotak">4</div>
+	<div class="kotak">5</div>
+	<div class="kotak">6</div>
+	<div class="kotak">7</div>
+	<div class="kotak">8</div>
+	<div class="kotak">9</div>
+	<div class="kotak">10</div>
+</div>
+<br><br>
+
+<!-- contoh penggunaan float untuk multi-coloumn layout -->
+<div class="container3 cf">
+	<div class="kiri"></div>
+	<div class="tengah"></div>
+	<div class="kanan"></div>
+</div>
+<br><br>
+
+</body>
+</html>

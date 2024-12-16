@@ -1,0 +1,13 @@
+.norm {
+	width: 600px;
+	height: 400px;
+	background-image: radial-gradient(salmon 60%, yellow 80%);
+}
+/* secara default tipe yg dipakai jika tidak di set adalah elipse dan posisi titik
+tengah gradien ada ditengah element */
+
+.multiple {
+	width: 600px;
+	height: 400px;
+	background-image: radial-gradient(circle farthest-side at -50px 170px, salmon, skyblue, yellow);
+}

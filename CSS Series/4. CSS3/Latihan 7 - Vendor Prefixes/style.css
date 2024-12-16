@@ -1,0 +1,25 @@
+body {
+	text-align: center;
+}
+
+img {
+	width: 300px;
+	filter: grayscale(100%);
+
+	/* misalkan pada chrome, safari dan opera versi baru tidak muncul propertinya, maka
+	-wbkit-filter: grayscale(100%); */
+
+	/* misalkan pada firefox tidak muncul propertinya, maka
+	-moz-filter: grayscale(100%); */
+
+	/* misalkan pada internet explorer (microsoft edge) tidak tampil propertinya, maka
+	-ms-filter: grayscale(100%); */
+
+	/* misal pada opera versi lama tidak muncul propertinya, maka
+	-o-filter: grayscale(100%); */
+}
+
+/* untuk mengetahui properti apa saja yg masih perlu menggunakan prefix untuk saat ini
+dapat mengunjungi situs shouldiprefix.com, caniuse.com dan pleeease.io/play/.
+atau jika pada code editor sudah ditambahkan plugin EMMET maka hanya perlu menuliskan
+nama properti kemudian sebelum ":" tekan "TAB" pada keyboard. */

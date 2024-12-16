@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Form</title>
+</head>
+<body>
+<form>
+	<label for="username">Usename : </label>
+	<input type="text" id="username">
+	<br>
+	<label for="password">Password : </label>
+	<input type="password" id="password">
+	<br>
+	<input type="radio" id="pria" name="kelamin">
+	<label for="pria">Laki-laki</label>
+	<input type="radio" id="wanita" name="kelamin">
+	<label for="wanita">Perempuan</label>
+	<br>
+	<input type="checkbox" id="menyanyi" name="hobi"><label for="menyanyi">Menyanyi</label>
+	<input type="checkbox" id="olahraga" name="hobi"><label for="olahraga">Olahraga</label>
+	<input type="checkbox" id="menari" name="hobi"><label for="menari">Menari</label>
+	<br>
+	<label for="catatan">Catatan : </label>
+	<textarea id="catatan"></textarea>
+	<br>
+	<label for="kota">Kota Kelahiran : </label>
+	<select id="kota">
+		<option>Bandung</option>
+		<option>Yogyakarta</option>
+		<option>Jakarta</option>
+	</select>
+	<br>
+	<input type="submit" value="KIRIM"> <!-- tidak disarankan -->
+	<button type="submit">KIRIM</button> <!-- disarankan -->
+</form>
+</body>
+</html>

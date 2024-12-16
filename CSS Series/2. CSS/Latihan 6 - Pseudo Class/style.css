@@ -1,0 +1,40 @@
+/* pseudo-class yg berhubungan dengan link */
+.hello:link { /* posisi class pada saat mode deafult link (tidak ditekan, tidak dibawah cursor, dan belum pernah dikunjungi) */
+	color: orange;
+}
+
+.hello:hover { /* posisi class saat cursor berada pada link */
+	color: green;
+	font-family: arial;
+	font-size: 20px;
+}
+
+.hello:active { /* posisi class saat link ditekan */
+	font-style: italic;
+}
+
+.hello:visited { /* posisi class saat link sudah pernah ditekan */
+	color: indianred;
+}
+
+/* pseudo-class yg berhubungan dengan posisi element (1) */
+/* ada first-child, last-child, nth-child */
+/* pada nth-child bisa juga menggunakan "odd" atau "even" */
+li:nth-child(5) a { /* bisa kelipatan 2 atau 3 dst, misal kelipatan 2 = 2n, kelipatan 3 = 3n */
+	color: green;
+}
+
+/* mengubah element child ganjir(odd) pada <li> saat kondisi hover */
+li:nth-child(odd) a:hover {
+	color: orangered;
+}
+
+/* pseudo-class yg berhubungan dengan posisi element (2) */
+/* ada first-of-type dan last-of-type */
+p:first-of-type { /* element pertama pada tag <p> */
+	color: blueviolet;
+}
+
+p:last-of-type { /* element terakhir pada tag <p> */
+	color: greenyellow;
+}

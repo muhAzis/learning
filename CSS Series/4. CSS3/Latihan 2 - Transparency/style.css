@@ -1,0 +1,57 @@
+body {
+	background-image: url(moroccan-flower.png);
+}
+
+.satu {
+	width: 300px;
+	height: 300px;
+	background-color: orangered;
+	opacity: 0.5; /* bisa diberi nilai dari 0-1 */
+	position: relative;
+}
+.dua {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;
+	right: -50px;
+	bottom: -50px;
+	opacity: 0.5;
+	/* class dua adalah child dari class satu, dan karena itu maka class dua akan
+	mewarisi properti yg digunakan oleh class satu sebagai parentnya.
+	Begitu pula dengan opacity, meskipun pada class dua tidak diberi properti opacity
+	tetapi pada class dua tetap mendapatkan efek opacity yg besarnya sama dengan parentnya.
+	Dan jika pada class dua sebagai child diberi lagi properti opacity maka nilanya adalah
+	nilai relatif dari nilai opacity parentnya. Misalkan pada parent diberi nilai opacity
+	0.5 (setengah/50%) dan child diberi nilai opacity sebesar 0.5 juga, maka hasilnya
+	child akan lebih transparan daripada parentnya padahal dengan nilai yg sama karena
+	nilai parentnya 0.5 maka nilai itu dianggap nilai maksimal oleh child, maka 0.5 dari
+	0.5 adalah 0.25. */
+}
+/* Cara mengatasi hal ini adalah tidak lagi menggunakan properti opacity melainkan
+	dengan menggunakan properti rgba().
+	Properti rgba() adalah sebuah metode untuk menuliskan warna dari sebuah element selain
+	hexa dan nama warna. Namun dengan adanya tambahan "a" (alpha) maka ada parameter baru
+	yg ditambahkan yaitu transparansi dari warna tersebut. Jadi menggunakan properti ini
+	bukan lagi menambah transparansi dari sebuah element melainkan transparansi warna dari
+	element tersebut. */	
+
+.tiga {
+	width: 300px;
+	height: 300px;
+	background-color: rgba(255, 80, 0, 0.5);
+	/*opacity: 0.5; */
+	position: relative;
+}
+.empat {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;
+	right: -50px;
+	bottom: -50px;
+	/*opacity: 0.5;*/
+}
+/* selain menggunakan properti rgba() dengan metode yg sama bisa juga menggunakan
+properti hsla(), yaitu code warna hsl dan tambahan parameter "a" untuk mengatur
+transparansi warnanya. */
